@@ -12,7 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
-import javafx.beans.binding.Bindings;
 import javax.swing.JOptionPane;
 
 /**
@@ -29,7 +28,8 @@ public class funciones {
     public void crearArchivo(String nomArchivo) throws IOException
     {
         Scanner sn = new Scanner(System.in);
-        FileWriter fichero = new FileWriter ("C:/Users/castr/Documents/"+nomArchivo+".txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc 
+        FileWriter fichero = new FileWriter ("../"+nomArchivo+".txt");//LINUX
+        //FileWriter fichero = new FileWriter ("C:/Users/castr/Documents/"+nomArchivo+".txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
         //FileWriter fichero = new FileWriter ("C:/Users/"+nomArchivo+".txt");//Esta ruta deberia funcionar en cualquierpc pero hay que iniciar netbenas como admin
         //-----------------------------------------------------------
         //solucionar problema de que esta ruta funciona solo en mi pc
@@ -45,6 +45,7 @@ public class funciones {
                 fichero.write(insertarNum+"\n");
                 numerosAl++;
             }
+
         numerosAl=0;
         System.out.println("Archivo creado exitosamente");
         fichero.close();
@@ -91,7 +92,8 @@ public class funciones {
         
         try 
         {
-            archivo = new File("C:/Users/castr/Documents/archivo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc 
+            archivo = new File("../archivo.txt");//LINUX
+            //archivo = new File("C:/Users/castr/Documents/archivo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
             //archivo = new File("C:/Users/archivo.txt");//Esta ruta deberia funcionar en cualquierpc pero hay que iniciar netbenas como admin
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
@@ -115,7 +117,8 @@ public class funciones {
             File archivo2;
             FileWriter escribir;
             PrintWriter linea2;
-            archivo2 = new File("C:/Users/castr/Documents/archivoNuevo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
+            archivo2 = new File("../archivoNuevo.txt");//LINUX
+            //archivo2 = new File("C:/Users/castr/Documents/archivoNuevo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
             //archivo2 = new File("C:/Users/archivoNuevo.txt");//Esta ruta deberia funcionar en cualquierpc pero hay que iniciar netbenas como admin
             while(recArreglo<arrDesordenado.length)//recorro el arreglo 
             {
@@ -148,7 +151,8 @@ public class funciones {
         int posicion=0;
         int posicionF=0;
         try {
-            archivo = new File("C:/Users/castr/Documents/archivoNuevo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
+            archivo = new File ("../archivoNuevo.txt");//LINUX
+            //archivo = new File("C:/Users/castr/Documents/archivoNuevo.txt");//Hay que cambiar esta ruta para hacer funcionar en otra pc
             //archivo = new File("C:/Users/archivoNuevo.txt");//Esta ruta deberia funcionar en cualquierpc pero hay que iniciar netbenas como admin
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);

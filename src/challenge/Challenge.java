@@ -49,13 +49,16 @@ public class Challenge {
                     fn.crearArchivo("archivo");
                     break;
                 case 2:
-                    fn.leerArchivo("C:/Users/castr/Documents/archivo.txt");
+                    //fn.leerArchivo("C:/Users/castr/Documents/archivo.txt");
+                    fn.leerArchivo("../archivo.txt");//LINUX
                     break;
                 case 3:
-                    fn.ordenarArchivo("C:/Users/castr/Documents/archivo.txt");
+                    //fn.ordenarArchivo("C:/Users/castr/Documents/archivo.txt");
+                    fn.ordenarArchivo("../archivoNuevo.txt");//LINUX
                     break;
                 case 4:
-                    fn.leerArchivo("C:/Users/castr/Documents/archivoNuevo.txt");
+                    //fn.leerArchivo("C:/Users/castr/Documents/archivoNuevo.txt");
+                    fn.leerArchivo("../archivoNuevo.txt");//LINUX
                     break;
                 case 5:
                     System.out.println("Introduce un numero para buscar en el archivo: ");
